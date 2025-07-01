@@ -50,7 +50,8 @@ document.querySelector("#app").innerHTML = `
           <li>Lunch & Nap Time</li>
         </ul>
       </div>
-    </section>
+      </a>
+      </section>
 
     <section class="mt-10 bg-teal-100 rounded-lg p-6 text-center">
       <h3 class="text-2xl font-bold mb-2 text-teal-800">Now Enrolling for Fall!</h3>
