@@ -1,9 +1,9 @@
-(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const l of t.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&s(l)}).observe(document,{childList:!0,subtree:!0});function a(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function s(e){if(e.ep)return;e.ep=!0;const t=a(e);fetch(e.href,t)}})();document.querySelector("#app").innerHTML=`
+/* empty css              */(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const l of t.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&s(l)}).observe(document,{childList:!0,subtree:!0});function a(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function s(e){if(e.ep)return;e.ep=!0;const t=a(e);fetch(e.href,t)}})();document.querySelector("#app").innerHTML=`
   <header class="bg-teal-600 text-white rounded-b-2xl shadow-md">
   <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
     <!-- Logo + Title -->
-    <a href="/" class="flex items-center space-x-3">
-      <img src="/little-sprouts.png" alt="Little Sprouts Logo" class="h-10 w-10 rounded-full shadow-md" />
+    <a href="./" class="flex items-center space-x-3">
+      <img src="./little-sprouts.png" alt="Little Sprouts Logo" class="h-10 w-10 rounded-full shadow-md" />
       <span class="text-2xl font-bold tracking-wide hover:text-yellow-100 transition">Little Sprouts Daycare</span>
     </a>
 
@@ -38,7 +38,7 @@
         </div>
       </a>
 
-      <a href="/about.html#routine" class="block">
+      <a href="./about.html#routine" class="block">
       <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
         <h3 class="text-xl font-bold mb-2 text-teal-700">Daily Routine</h3>
         <ul class="list-disc ml-5 text-gray-700">
@@ -48,7 +48,8 @@
           <li>Lunch & Nap Time</li>
         </ul>
       </div>
-    </section>
+      </a>
+      </section>
 
     <section class="mt-10 bg-teal-100 rounded-lg p-6 text-center">
       <h3 class="text-2xl font-bold mb-2 text-teal-800">Now Enrolling for Fall!</h3>
