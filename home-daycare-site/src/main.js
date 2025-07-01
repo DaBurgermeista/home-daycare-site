@@ -11,9 +11,9 @@ document.querySelector("#app").innerHTML = `
 
     <!-- Navigation Links -->
     <nav class="flex space-x-6 text-lg font-medium">
-      <a href="/" class="hover:text-yellow-200 transition">Home</a>
-      <a href="/about.html" class="hover:text-yellow-200 transition">About</a>
-      <a href="/contact.html" class="hover:text-yellow-200 transition">Contact</a>
+      <a href="./" class="hover:text-yellow-200 transition">Home</a>
+      <a href="./about.html" class="hover:text-yellow-200 transition">About</a>
+      <a href="./contact.html" class="hover:text-yellow-200 transition">Contact</a>
     </nav>
   </div>
 </header>
@@ -31,7 +31,7 @@ document.querySelector("#app").innerHTML = `
     </section>
 
     <section class="mt-10 grid md:grid-cols-2 gap-6">
-      <a href="/about.html#philosophy" class="block">
+      <a href="./about.html#philosophy" class="block">
         <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
           <h3 class="text-xl font-bold mb-2 text-teal-700">Our Philosophy</h3>
           <p class="text-gray-700">
@@ -55,7 +55,7 @@ document.querySelector("#app").innerHTML = `
     <section class="mt-10 bg-teal-100 rounded-lg p-6 text-center">
       <h3 class="text-2xl font-bold mb-2 text-teal-800">Now Enrolling for Fall!</h3>
       <p class="mb-4 text-gray-700">Limited spots available. Contact us today to schedule a tour!</p>
-      <a href="/contact" class="inline-block bg-teal-600 text-white px-6 py-2 rounded shadow hover:bg-teal-700 transition">
+      <a href="./contact.html" class="inline-block bg-teal-600 text-white px-6 py-2 rounded shadow hover:bg-teal-700 transition">
         Contact Us
       </a>
     </section>
