@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/little-sprouts.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Little Sprouts</title>
+    <link rel="stylesheet" href="/src/index.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-yellow-50 font-sans text-gray-800">
+    <header class="bg-teal-600 text-white shadow-md sticky top-0 z-50">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <!-- Logo + Title -->
+        <a href="/" class="flex items-center space-x-3">
+          <img
+            src="/little-sprouts.png"
+            alt="Little Sprouts Logo"
+            class="h-10 w-10 rounded-full shadow-md"
+          />
+          <span
+            class="text-2xl font-bold tracking-wide hover:text-yellow-100 transition"
+            >Little Sprouts</span
+          >
+        </a>
+
+        <!-- Navigation Links -->
+        <nav class="flex space-x-6 text-lg font-medium">
+          <a href="/" class="hover:text-yellow-200 transition">Home</a>
+          <a href="/about.html" class="hover:text-yellow-200 transition"
+            >About</a
+          >
+          <a href="/contact.html" class="hover:text-yellow-200 transition"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- Floating Dot Navigation -->
+    <div
+      class="fixed right-6 top-1/2 transform -translate-y-1/2 z-50 space-y-4"
+    >
+      <a
+        href="#about"
+        class="block w-4 h-4 bg-teal-500 rounded-full opacity-60 hover:opacity-100 transition"
+      ></a>
+      <a
+        href="#philosophy"
+        class="block w-4 h-4 bg-teal-500 rounded-full opacity-60 hover:opacity-100 transition"
+      ></a>
+      <a
+        href="#routine"
+        class="block w-4 h-4 bg-teal-500 rounded-full opacity-60 hover:opacity-100 transition"
+      ></a>
+    </div>
+
+    <main
+      class="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth"
+    >
+      <section
+        id="about"
+        class="relative min-h-screen snap-start flex items-center bg-yellow-50 p-10"
+      >
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl font-bold text-teal-700 mb-4">About Us</h2>
+          <p class="text-lg text-gray-700">Welcome to Little Sprouts...</p>
+        </div>
+        <div
+          class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10 animate-bounce"
+        >
+          <a
+            href="#philosophy"
+            class="text-4xl text-teal-500 hover:text-teal-700"
+            >&#8595;</a
+          >
+        </div>
+      </section>
+
+      <section
+        id="philosophy"
+        class="relative min-h-screen snap-start flex items-center bg-white p-10"
+      >
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl font-bold text-teal-700 mb-4">Our Philosophy</h2>
+          <p class="text-lg text-gray-700">
+            We believe children learn best through...
+          </p>
+        </div>
+        <div
+          class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10 animate-bounce"
+        >
+          <a href="#routine" class="text-4xl text-teal-500 hover:text-teal-700"
+            >&#8595;</a
+          >
+        </div>
+      </section>
+
+      <section
+        id="routine"
+        class="min-h-screen snap-start flex items-center bg-gray-100 p-10"
+      >
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl font-bold text-teal-700 mb-4">
+            Our Daily Routine
+          </h2>
+          <ul class="list-disc ml-6 text-lg text-gray-700 space-y-2">
+            <li>Morning Play</li>
+            <li>Story Time</li>
+            <li>Outdoor Adventures</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-100 text-center text-sm p-4 mt-12">
+      &copy; 2025 Little Sprouts Home Daycare • Chesapeake, VA
+    </footer>
+  </body>
+</html>
