@@ -1,4 +1,4 @@
-(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))l(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const s of t.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&l(s)}).observe(document,{childList:!0,subtree:!0});function a(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function l(e){if(e.ep)return;e.ep=!0;const t=a(e);fetch(e.href,t)}})();document.querySelector("#app").innerHTML=`
+(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const l of t.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&s(l)}).observe(document,{childList:!0,subtree:!0});function a(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function s(e){if(e.ep)return;e.ep=!0;const t=a(e);fetch(e.href,t)}})();document.querySelector("#app").innerHTML=`
   <header class="bg-teal-600 text-white rounded-b-2xl shadow-md">
   <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
     <!-- Logo + Title -->
@@ -9,9 +9,9 @@
 
     <!-- Navigation Links -->
     <nav class="flex space-x-6 text-lg font-medium">
-      <a href="/" class="hover:text-yellow-200 transition">Home</a>
-      <a href="/about.html" class="hover:text-yellow-200 transition">About</a>
-      <a href="/contact.html" class="hover:text-yellow-200 transition">Contact</a>
+      <a href="./" class="hover:text-yellow-200 transition">Home</a>
+      <a href="./about.html" class="hover:text-yellow-200 transition">About</a>
+      <a href="./contact.html" class="hover:text-yellow-200 transition">Contact</a>
     </nav>
   </div>
 </header>
@@ -29,7 +29,7 @@
     </section>
 
     <section class="mt-10 grid md:grid-cols-2 gap-6">
-      <a href="/about.html#philosophy" class="block">
+      <a href="./about.html#philosophy" class="block">
         <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
           <h3 class="text-xl font-bold mb-2 text-teal-700">Our Philosophy</h3>
           <p class="text-gray-700">
@@ -53,7 +53,7 @@
     <section class="mt-10 bg-teal-100 rounded-lg p-6 text-center">
       <h3 class="text-2xl font-bold mb-2 text-teal-800">Now Enrolling for Fall!</h3>
       <p class="mb-4 text-gray-700">Limited spots available. Contact us today to schedule a tour!</p>
-      <a href="/contact" class="inline-block bg-teal-600 text-white px-6 py-2 rounded shadow hover:bg-teal-700 transition">
+      <a href="./contact.html" class="inline-block bg-teal-600 text-white px-6 py-2 rounded shadow hover:bg-teal-700 transition">
         Contact Us
       </a>
     </section>
