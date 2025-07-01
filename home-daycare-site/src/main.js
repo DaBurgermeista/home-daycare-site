@@ -4,8 +4,8 @@ document.querySelector("#app").innerHTML = `
   <header class="bg-teal-600 text-white rounded-b-2xl shadow-md">
   <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
     <!-- Logo + Title -->
-    <a href="/" class="flex items-center space-x-3">
-      <img src="/little-sprouts.png" alt="Little Sprouts Logo" class="h-10 w-10 rounded-full shadow-md" />
+    <a href="./" class="flex items-center space-x-3">
+      <img src="./little-sprouts.png" alt="Little Sprouts Logo" class="h-10 w-10 rounded-full shadow-md" />
       <span class="text-2xl font-bold tracking-wide hover:text-yellow-100 transition">Little Sprouts Daycare</span>
     </a>
 
@@ -40,7 +40,7 @@ document.querySelector("#app").innerHTML = `
         </div>
       </a>
 
-      <a href="/about.html#routine" class="block">
+      <a href="./about.html#routine" class="block">
       <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
         <h3 class="text-xl font-bold mb-2 text-teal-700">Daily Routine</h3>
         <ul class="list-disc ml-5 text-gray-700">
